@@ -44,12 +44,12 @@ const Navbar = () => {
           >
             lucksiyo!
           </a>
-          <div className='hidden lg:flex items-center text-sm text-(--accent)'>
+          <div className='hidden lg:flex items-center font-[600] text-sm text-(--accent)'>
             <p>[&nbsp;</p>
             <MdLocationOn />
             <p>&nbsp;Southern California, USA ]</p>
           </div>
-          <div className='hidden lg:flex items-center text-sm text-(--accent) uppercase'>
+          <div className='hidden lg:flex items-center font-[600] text-sm text-(--accent) uppercase'>
             <p>[&nbsp;</p>
             <MdAccessTimeFilled />
             <p>&nbsp;</p>
@@ -69,7 +69,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-4 font-[600]">
           <a href='/projects' className="hover:text-(--accent)">[ Web/App Dev ]</a>
           <a href='/about' className="hover:text-(--accent)">[ About ]</a>
         </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
             onClick={() => setShowMobileNav(!showMobileNav)}
             className=""
           >
-            {showMobileNav ? <MdClose size={'1.5rem'} /> : <MdMenu size={'1.5rem'} />}
+            <MdMenu size={'1.5rem'} />
           </button>
         </div>
       </motion.nav>
@@ -92,8 +92,14 @@ const Navbar = () => {
             whileInView={{ x: 0, opacity: 1 }}
             exit={{ x: 50, opacity: 0 }}
             transition={{ ease: easeInOut, duration: 0.3 }}
-            className="mobile-menu fixed px-8 py-4 top-13 right-0 z-1000 flex flex-col items-end gap-2 border-1 border-r-0"
+            className="mobile-menu fixed p-4 pb-8 top-0 right-0 z-1000 flex flex-col items-end gap-2 border-1 font-[600]"
           >
+            <button 
+              onClick={() => setShowMobileNav(!showMobileNav)}
+              className=""
+            >
+              <MdClose size={'1.5rem'} />
+            </button>
             <a 
               href='/projects'
               className="hover:text-(--accent)"

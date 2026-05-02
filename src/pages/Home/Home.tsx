@@ -72,7 +72,7 @@ const Home = () => {
       </div>
 
       {/* location / datetime */}
-      <div className='w-full px-4 py-2 absolute top-0 left-0 right-0 flex flex-col sm:flex-row justify-between items-center text-sm text-(--accent)'>
+      <div className='w-full px-4 py-2 absolute top-0 left-0 right-0 flex flex-col sm:flex-row justify-between items-center font-[600] text-sm text-(--accent)'>
         <div className='flex items-center'>
           <p>[&nbsp;</p>
           <MdLocationOn />
@@ -100,7 +100,7 @@ const Home = () => {
       </div>
 
       {/* bottom text */} 
-      <div className='w-full px-4 py-2 absolute bottom-0 left-0 right-0 flex justify-center items-center text-sm text-(--accent)'>
+      <div className='w-full px-4 py-2 absolute bottom-0 left-0 right-0 flex justify-center items-center font-[600] text-sm text-(--accent)'>
         <p>[ Prod. 2026 by lucksiyo! ]</p>
       </div>
     </div>  

@@ -16,7 +16,7 @@ const Projects = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-8 items-center">
             <img
-              className="mb-2 border-3"
+              className="border-1"
               src={tempoPreview}
               alt="Tempo app logo"
             />
@@ -30,7 +30,7 @@ const Projects = () => {
                 A mobile app for health and menstrual cycle tracking that uses a local-only database.
               </p>
               <a 
-                className="mt-2 py-1 flex justify-center items-center gap-2 text-center text-(--light) bg-(--dark) hover:bg-(--accent)"
+                className="mt-2 py-1 flex justify-center items-center gap-2 text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
                 href='https://github.com/lucksiyo/tempo'
                 target='_blank'
                 rel='noopenner noreferrer'
@@ -54,7 +54,7 @@ const Projects = () => {
                 A website for The Spacelab Nonprofit, sharing the organization's mission, vision, and core values.
               </p>
               <a 
-                className="mt-2 py-1 flex justify-center items-center gap-2 text-center text-(--light) bg-(--dark) hover:bg-(--accent)"
+                className="mt-2 py-1 flex justify-center items-center gap-2 text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
                 href='https://spacelab.space/'
                 target='_blank'
                 rel='noopenner noreferrer'
@@ -64,7 +64,7 @@ const Projects = () => {
               </a>
             </div>
             <img
-              className="mb-2 border-3"
+              className="border-1"
               src={spacelabPreview}
               alt="Screenshot of The Spacelab Nonprofit website"
             />

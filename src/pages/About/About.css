@@ -15,5 +15,5 @@
 .social-link:hover {
   padding: 0.25rem 1rem;
   color: var(--light);
-  background-color: var(--accent);
+  background-color: var(--primary);
 }

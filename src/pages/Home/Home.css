@@ -7,7 +7,8 @@
 }
 
 .subpage-link {
-  margin: 0 ;
+  margin: 0;
+  padding: 0.25rem;
   font-size: 1.125rem;
   display: flex;
   flex-direction: row;
@@ -33,7 +34,7 @@
 }
 
 .subpage-link:hover {
-  padding: 0 1.5rem;
+  padding: 0.25rem 1.5rem;
   color: var(--light);
   background-color: var(--accent);
 }

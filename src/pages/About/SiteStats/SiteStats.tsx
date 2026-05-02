@@ -43,13 +43,13 @@ const SiteStats: React.FC = () => {
 
   return (
     <div>
-      <h4 className="font-[500] uppercase">Last Updated</h4>
+      <h4 className="font-[600] uppercase">Last Updated</h4>
       <p>{site?.updated ?? 'Unknown'}</p>
       <hr className='my-1' />
-      <h4 className="font-[500] uppercase">Views</h4>
+      <h4 className="font-[600] uppercase">Views</h4>
       <p>{site?.views ?? 'Unavailable'}</p>
       <hr className='my-1' />
-      <h4 className="font-[500] uppercase">Followers</h4>
+      <h4 className="font-[600] uppercase">Followers</h4>
       <p>{site?.followers ?? 'Unavailable'}</p>
     </div>
   )

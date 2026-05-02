@@ -50,7 +50,11 @@ const MusicPlayer = ({ username }: { username: string }) => {
     return () => clearInterval(intervalId)
   }, [username])
 
-  if (!track) return null
+  if (!track) return (
+    <>
+      <p>Loading...</p>
+    </>
+  )
 
   const isPlaying = track['@attr']?.nowplaying === 'true'
 
@@ -59,12 +63,12 @@ const MusicPlayer = ({ username }: { username: string }) => {
       <div className='lg:col-span-2 flex flex-col items-center lg:items-start'>
         {isPlaying ? 
           <div className='flex items-center gap-2'>
-            <p className='font-[500] uppercase'>Now Playing</p> 
+            <p className='font-[600] uppercase'>Now Playing</p> 
             <div className='h-[0.75rem] w-[0.75rem] bg-[#4D8C40] rounded-full'></div>
           </div>
           :
           <div className='flex items-center gap-2'>
-            <p className='font-[500] uppercase'>Last Played</p> 
+            <p className='font-[600] uppercase'>Last Played</p> 
             <div className='h-[0.75rem] w-[0.75rem] bg-[#C64A34] rounded-full'></div>
           </div>
         }

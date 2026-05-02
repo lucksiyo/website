@@ -24,7 +24,7 @@ const About = () => {
               <hr className="my-1 border-t-4" />
               <SiteStats />
               <a 
-                className="mt-2 py-1 flex justify-center text-center text-(--light) bg-(--dark) hover:bg-(--accent)"
+                className="mt-2 py-1 flex justify-center text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
                 href="https://nekoweb.org/follow/lucksiyo.nekoweb.org"
                 target='_blank'
                 rel='noopenner noreferrer'
@@ -136,13 +136,13 @@ const About = () => {
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">About</h3>
               <hr className="my-1 border-t-4" />
               <p>
-                Hey, I'm <span className="font-[700]">lucksiyo!</span> and I'm a web/app dev. My interests include
+                Hey, I'm <span className="font-[600] text-(--primary)">lucksiyo!</span> and I'm a web/app dev. My interests include
                 open source, computer networks, cinematography, and tabletop/video
                 games.
               </p>
               <a
                 href="#links"
-                className="md:hidden mt-2 py-1 flex justify-center text-center text-(--light) bg-(--dark) hover:bg-(--accent)"
+                className="md:hidden mt-2 py-1 flex justify-center text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
               >
                 Contact Me
               </a>
