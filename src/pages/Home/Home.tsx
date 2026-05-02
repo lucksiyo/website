@@ -48,21 +48,21 @@ const Home = () => {
         <div className='w-full flex flex-col gap-2'>
           <a 
             className='subpage-link'
-            href='/projects'
+            href='#/projects'
           >
             <p>Web/App Dev</p>
             <MdOutlineArrowForward />
           </a>
           <a 
             className='subpage-link'
-            href='/about'
+            href='#/about'
           >
             About
             <MdOutlineArrowForward />
           </a>
           <a 
             className='subpage-link'
-            href='/'
+            href='#/'
           >
             <p>More coming soon.</p>
             <MdOutlineClose />

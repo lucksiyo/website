@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { HashRouter, Routes, Route } from 'react-router'
 import { UseSmoothScroll } from 'smooth-motion'
 
 import Home from './pages/Home/Home'
@@ -9,13 +9,13 @@ function App() {
   return (
     <div>
       <UseSmoothScroll speed={1.5} />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }

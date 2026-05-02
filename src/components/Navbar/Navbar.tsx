@@ -70,8 +70,8 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-          <a href='/projects' className="hover:text-(--accent)">[ Web/App Dev ]</a>
-          <a href='/about' className="hover:text-(--accent)">[ About ]</a>
+          <a href='#/projects' className="hover:text-(--accent)">[ Web/App Dev ]</a>
+          <a href='#/about' className="hover:text-(--accent)">[ About ]</a>
         </div>
 
         <div className="flex items-center md:hidden">
@@ -95,13 +95,13 @@ const Navbar = () => {
             className="mobile-menu fixed px-8 py-4 top-13 right-0 z-1000 flex flex-col items-end gap-2 border-1 border-r-0"
           >
             <a 
-              href='/projects'
+              href='#/projects'
               className="hover:text-(--accent)"
             >
               [ Web/App Dev ]
             </a>
             <a
-              href='/about'
+              href='#/about'
               className="hover:text-(--accent)"
             >
               [ About ]
