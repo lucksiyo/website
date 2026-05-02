@@ -1,0 +1,19 @@
+#about {
+  background: url(../../assets/images/grain.svg);
+}
+
+.social-link {
+  margin: 0.25rem 0;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+  transition: padding 0.3s ease-out;
+}
+
+.social-link:hover {
+  padding: 0.25rem 1rem;
+  color: var(--light);
+  background-color: var(--accent);
+}

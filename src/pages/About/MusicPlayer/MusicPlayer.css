@@ -1,0 +1,14 @@
+.rotate {
+  clip-path: circle(50% at center);
+  object-fit: cover;
+  animation: rotate 7s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

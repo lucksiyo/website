@@ -1,0 +1,45 @@
+#home {
+  background: url(../../assets/images/grain.svg);
+}
+
+.splash-text {
+  animation: pulse 0.6s ease-in-out infinite;
+}
+
+.subpage-link {
+  margin: 0 ;
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: padding 0.3s ease-out;
+
+  @media (min-width: 640px) {
+    margin: 0 4rem; 
+  }
+
+  @media (min-width: 768px) {
+    margin: 0 8rem; 
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0 0 0 12rem; 
+  }
+
+  @media (min-width: 1280px) {
+    margin: 0 0 0 16rem;
+  }
+}
+
+.subpage-link:hover {
+  padding: 0 1.5rem;
+  color: var(--light);
+  background-color: var(--accent);
+}
+
+@keyframes pulse {
+  50% {
+    scale: 1.125;
+  }
+}

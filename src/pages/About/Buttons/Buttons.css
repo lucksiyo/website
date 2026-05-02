@@ -1,0 +1,16 @@
+div .button-88x31:nth-child(odd):hover {
+  rotate: -10deg;
+}
+
+div .button-88x31:nth-child(even):hover {
+  rotate: 10deg;
+}
+
+.button-88x31 {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button-88x31:hover {
+  scale: 1.25;
+}

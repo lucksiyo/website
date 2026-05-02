@@ -1,0 +1,43 @@
+/*!@nkb "domain":"lucksiyo.nekoweb.org","rss":"","overflow":false,"readonly":false */
+/*
+  Don't use this file to edit your site style! Create a different CSS file for that.
+  This file defines how custom elements (like sitebox) will look like.
+  Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion!
+*/
+
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
+.site-box {
+  /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+  background: url(https://lucksiyo.nekoweb.org/lucksiyo.nekoweb.org/resources/grain.svg), linear-gradient(to bottom, #F6F1D1, #40798C 80%);
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.site-box > a > p {
+  padding-top: 8px;
+  color: white;
+  font-size: 16px;
+  line-height: 0.5;
+  text-transform: uppercase;
+}
+
+.site-box > a > span {
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* Style for your post box (must start with ".post-box") */
+.post-box {
+  color: #0B2027;
+  background: url(https://lucksiyo.nekoweb.org/lucksiyo.nekoweb.org/resources/grain.svg), #F6F1D1;
+  font-family: monospace;
+  border: 3px solid #0B2027;
+  border-radius: 0;
+}
+
+.post-box .post-title {
+  text-transform: uppercase;
+  font-family: monospace;
+  font-style: normal;
+}

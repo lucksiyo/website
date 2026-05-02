@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --light: #F6F1D1;
+  --dark: #0B2027;
+  --accent: #6B4434;
+  --primary: #40798C;
+  --secondary: #70A9A1;
+
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+  font-family: 'SourceCodePro', monospace;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("./assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: italic;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("./assets/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SourceCodePro;
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("./assets/fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SourceCodePro;
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("./assets/fonts/SourceCodePro-Italic-VariableFont_wght.ttf") format("truetype");
+}
