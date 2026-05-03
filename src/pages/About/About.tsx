@@ -8,6 +8,8 @@ import MusicPlayer from "./MusicPlayer/MusicPlayer"
 import SiteStats from "./SiteStats/SiteStats"
 import Buttons from './Buttons/Buttons';
 
+import button from '../../assets/images/buttons/button.jpg'
+
 import './About.css'
 
 const About = () => {
@@ -158,6 +160,12 @@ const About = () => {
             <div className="p-4 border-1">
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Buttons</h3>
               <hr className="my-1 border-t-4" />
+              <div className="my-4 w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
+                <img className="site-button w-[88px] h-[31px]" src={button} />
+                <textarea className="bg-white border-1" readOnly>
+                  &lt;a href="https://lucksiyo.nekoweb.org/"&gt; &lt;img src="https://lucksiyo.nekoweb.org/resources/button.jpg" /&gt;&lt;/a&gt;
+                </textarea>
+              </div>
               <Buttons />
             </div>
 

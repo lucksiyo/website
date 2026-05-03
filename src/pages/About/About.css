@@ -17,3 +17,13 @@
   color: var(--light);
   background-color: var(--primary);
 }
+
+.site-button {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.site-button:hover {
+  scale: 1.25;
+  border: 1px solid var(--dark);
+}
