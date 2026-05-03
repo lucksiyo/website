@@ -84,10 +84,10 @@ const MusicPlayer = ({ username }: { username: string }) => {
           alt={track.album['#text'] + ' cover art'}
         /> 
         <div 
-          className='absolute left-0 -translate-x-1/2 top-1/2 -translate-y-1/2 h-[2.5rem] w-[2.5rem] z-10 bg-(--dark) opacity-[0.25] rounded-full flex items-center'
+          className='absolute left-0 -translate-x-1/2 top-1/2 -translate-y-1/2 h-[2.5rem] w-[2.5rem] z-10 bg-(--dark) opacity-[0.5] rounded-full flex items-center'
         />
         <img 
-          className='rotate absolute left-0 -translate-x-1/2 top-1/2 -translate-y-1/2 h-[7rem] w-[7rem] object-cover blur-sm rounded-full flex items-center'
+          className='rotate absolute left-0 -translate-x-1/2 top-1/2 -translate-y-1/2 h-[7rem] w-[7rem] object-cover blur-xs rounded-full flex items-center'
           src={track.image[3]['#text']}
           alt='disc'
         />
