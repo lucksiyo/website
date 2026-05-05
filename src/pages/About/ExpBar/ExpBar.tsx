@@ -34,17 +34,18 @@ const ExpBar: React.FC = () => {
     <div className="flex flex-col">
 
       <div className='flex items-center gap-2'>
-        <p className="font-['Rubik'] font-[600]">Lv. {level}</p>
-        <div className="w-[200px] h-2 bg-white border-1 overflow-hidden">
+        <p className="font-['Rubik'] font-[600] text-sm">Lv. {level}</p>
+        <div className="w-[150px] h-2 bg-white border-1 rounded-full overflow-hidden">
           <div 
-            className="h-full bg-gradient-to-r from-emerald-600 to-green-600 transition-all duration-500"
+            className="h-full bg-gradient-to-r from-(--primary) to-(--secondary) transition-all duration-500"
             style={{ width: `${progress}%` }}
           />
         </div>
+        <p className=" font-['Rubik'] font-[600] text-sm">EXP</p>
       </div>
       
     </div>
   );
 };
 
-export default ExpBar;
+export default ExpBar

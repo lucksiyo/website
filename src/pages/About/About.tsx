@@ -1,14 +1,15 @@
-import { MdArrowOutward } from "react-icons/md";
-import { FaGithub, FaItchIo, FaInstagram, FaTwitch, FaYoutube } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md"
+import { FaGithub, FaItchIo, FaInstagram, FaTwitch, FaYoutube, FaCat } from "react-icons/fa"
 import { FaBluesky } from "react-icons/fa6";
 
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer"
 import MusicPlayer from "./MusicPlayer/MusicPlayer"
 import SiteStats from "./SiteStats/SiteStats"
-import Buttons from './Buttons/Buttons';
+import Buttons from './Buttons/Buttons'
 
 import button from '../../assets/images/buttons/button.jpg'
+import icon from '../../assets/images/icon.png'
 
 import './About.css'
 import ExpBar from "./ExpBar/ExpBar";
@@ -26,21 +27,14 @@ const About = () => {
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Site Stats</h3>
               <hr className="my-1 border-t-4" />              
               <SiteStats />
-              <a 
-                className="mt-2 py-1 flex justify-center text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
-                href="https://nekoweb.org/follow/lucksiyo.nekoweb.org"
-                target='_blank'
-                rel='noopenner noreferrer'
-              >
-                Follow on Nekoweb
-              </a>
+              
             </div>
 
             <div id='links' className="p-4 border-1">
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Links</h3>
               <hr className="my-1 border-t-4" />
               <div>
-                
+
                 <a 
                   className="social-link"
                   href="https://github.com/lucksiyo"
@@ -128,6 +122,21 @@ const About = () => {
                   </div>
                   <MdArrowOutward />
                 </a>
+
+                <hr className='my-1' />
+
+                <a 
+                  className="social-link"
+                  href="https://nekoweb.org/follow/lucksiyo.nekoweb.org"
+                  target='_blank'
+                  rel='noopenner noreferrer'
+                >
+                  <div className="flex items-center gap-2">
+                    <FaCat />
+                    <p>Follow on Nekoweb</p>
+                  </div>
+                  <MdArrowOutward />
+                </a>
                 
               </div>
             </div>
@@ -138,12 +147,20 @@ const About = () => {
             <div className="p-4 border-1 flex flex-col">
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">About</h3>
               <hr className="my-1 border-t-4" />
-              <ExpBar />
-              <p>
-                Hey, I'm <span className="font-[600] text-(--primary)">lucksiyo!</span> and I'm a creative dev. My interests include
-                open source, computer networks, cinematography, and tabletop/video
-                games.
-              </p>
+              <div className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-4">
+                <div className="pt-2 flex flex-col justify-center items-center gap-2">
+                  <img 
+                    className="w-[150px] max-h-[150px] object-contain"
+                    src={icon}
+                  />
+                  <ExpBar />
+                </div>                
+                <p>
+                  Hey, I'm <span className="font-[600] text-(--primary)">lucksiyo!</span> and I'm a creative dev. My interests include
+                  open source, computer networks, cinematography, and tabletop/video
+                  games.
+                </p>
+              </div>
               <a
                 href="#links"
                 className="md:hidden mt-2 py-1 flex justify-center text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
@@ -179,4 +196,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About
