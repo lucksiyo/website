@@ -39,7 +39,7 @@ const Navbar = () => {
       >
         
         <div className="flex items-center gap-4">
-          <a className="font-['Rubik'] font-[500] text-[2.25rem]" 
+          <a className="font-['Rubik'] font-[500] text-[2.25rem] hover:text-(--primary)" 
             href="/"
           >
             lucksiyo!

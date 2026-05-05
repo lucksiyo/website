@@ -24,8 +24,7 @@ const About = () => {
           <div className="md:col-span-1 flex flex-col gap-8">
             <div className="p-4 border-1">
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Site Stats</h3>
-              <hr className="my-1 border-t-4" />
-              <p className="text-sm italic">Hosted on Nekoweb.</p>
+              <hr className="my-1 border-t-4" />              
               <SiteStats />
               <a 
                 className="mt-2 py-1 flex justify-center text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
@@ -34,7 +33,7 @@ const About = () => {
                 rel='noopenner noreferrer'
               >
                 Follow on Nekoweb
-              </a> 
+              </a>
             </div>
 
             <div id='links' className="p-4 border-1">
