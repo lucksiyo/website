@@ -6,16 +6,17 @@ import About from './pages/About/About'
 import Projects from './pages/Projects/Projects'
 
 function App() {
+
   return (
     <div>
       <UseSmoothScroll speed={1.5} />
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/projects' element={<Projects />} />
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/projects' element={<Projects />} />
+          </Routes>
+        </BrowserRouter>      
     </div>
   )
 }
