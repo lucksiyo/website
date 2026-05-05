@@ -29,10 +29,10 @@ const Projects = () => {
               <p>
                 A mobile app for health and menstrual cycle tracking that uses a local-only database.
               </p>
-              <div className="my-1 flex flex-wrap gap-2 text-xs font-[600]">
-                <p className="text-blue-900 bg-blue-200/20 px-2 border-2 rounded-full">React Native + TypeScript</p>
-                <p className="text-purple-900 bg-purple-200/20 px-2 border-2 rounded-full">Realm</p>
-                <p className="text-yellow-900 bg-yellow-200/20 px-2 border-2 rounded-full">Expo</p>
+              <div className="my-2 flex flex-wrap gap-2 text-xs font-[600]">
+                <p className="text-blue-900 bg-blue-200/20 px-2 border-1 rounded-full">React Native + TypeScript</p>
+                <p className="text-purple-900 bg-purple-200/20 px-2 border-1 rounded-full">Realm</p>
+                <p className="text-yellow-900 bg-yellow-200/20 px-2 border-1 rounded-full">Expo</p>
               </div>
               <a 
                 className="mt-2 py-1 flex justify-center items-center gap-2 text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
@@ -58,9 +58,9 @@ const Projects = () => {
               <p>
                 A website for The Spacelab Nonprofit, sharing the organization's mission, vision, and core values.
               </p>
-              <div className="my-1 flex flex-wrap gap-2 text-xs font-[600]">
-                <p className="text-cyan-900 bg-cyan-200/20 px-2 border-2 rounded-full">React + JavaScript</p>
-                <p className="text-fuchsia-900 bg-fuchsia-200/20 px-2 border-2 rounded-full">SCSS</p>
+              <div className="my-2 flex flex-wrap gap-2 text-xs font-[600]">
+                <p className="text-cyan-900 bg-cyan-200/20 px-2 border-1 rounded-full">React + JavaScript</p>
+                <p className="text-fuchsia-900 bg-fuchsia-200/20 px-2 border-1 rounded-full">SCSS</p>
               </div>
               <a 
                 className="mt-2 py-1 flex justify-center items-center gap-2 text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
