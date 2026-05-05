@@ -11,6 +11,7 @@ import Buttons from './Buttons/Buttons';
 import button from '../../assets/images/buttons/button.jpg'
 
 import './About.css'
+import ExpBar from "./ExpBar/ExpBar";
 
 const About = () => {
   return (
@@ -138,8 +139,9 @@ const About = () => {
             <div className="p-4 border-1 flex flex-col">
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">About</h3>
               <hr className="my-1 border-t-4" />
+              <ExpBar />
               <p>
-                Hey, I'm <span className="font-[600] text-(--primary)">lucksiyo!</span> and I'm a web/app dev. My interests include
+                Hey, I'm <span className="font-[600] text-(--primary)">lucksiyo!</span> and I'm a creative dev. My interests include
                 open source, computer networks, cinematography, and tabletop/video
                 games.
               </p>
@@ -168,7 +170,6 @@ const About = () => {
               </div>
               <Buttons />
             </div>
-
           </div>
 
         </div>
