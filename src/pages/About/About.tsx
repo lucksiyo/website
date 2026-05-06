@@ -67,7 +67,7 @@ const About = () => {
                 
                 <a 
                   className="social-link"
-                  href="https://bsky.app/profile/lucksiyo.nya.je"
+                  href="https://bsky.app/profile/lucksiyo.xyz"
                   target="_blank"
                   rel="noopener noreferrer" 
                 >
