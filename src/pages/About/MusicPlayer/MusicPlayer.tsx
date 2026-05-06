@@ -72,7 +72,7 @@ const MusicPlayer = ({ username }: { username: string }) => {
             <div className='h-[0.5rem] w-[0.5rem] bg-red-800/70 rounded-full'></div>
           </div>
         }
-        <div className='mt-2 flex flex-col items-center lg:items-start'>
+        <div className='mt-2 flex flex-col text-center lg:items-start'>
           <p>{track.name}</p>
           <p className='text-[0.875rem]'>by {track.artist['#text']}</p>
           <p className='text-[0.875rem]'>from {track.album['#text']}</p>
