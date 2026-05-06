@@ -147,23 +147,24 @@ const About = () => {
             <div className="p-4 border-1 flex flex-col">
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">About</h3>
               <hr className="my-1 border-t-4" />
-              <div className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-4">
-                <div className="pt-2 flex flex-col justify-center items-center gap-2">
+              <div className="flex flex-col items-center lg:grid lg:grid-cols-3 gap-4">
+                <div className="pt-2 flex flex-col justify-center items-center lg:col-span-1 gap-2">
                   <img 
                     className="w-[150px] max-h-[150px] object-contain"
                     src={icon}
+                    alt="luxio plushie"
                   />
                   <ExpBar />
                 </div>                
-                <p>
-                  Hey, I'm <span className="font-[600] text-(--primary)">lucksiyo!</span> and I'm a creative dev. My interests include
+                <p className="lg:col-span-2">
+                  Hey, I'm <span className="font-[600] text-(--primary)">lucksiyo!</span> and I'm a creative software dev. My interests include
                   open source, computer networks, cinematography, and tabletop/video
                   games.
                 </p>
               </div>
               <a
                 href="#links"
-                className="md:hidden mt-2 py-1 flex justify-center text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
+                className="md:hidden mt-4 py-1 flex justify-center text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
               >
                 Contact Me
               </a>
