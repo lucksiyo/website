@@ -16,7 +16,7 @@ const SiteStats: React.FC = () => {
   const [site, setSite] = useState<SiteDisplay | null>(null)
 
   useEffect(() => {
-    const domain = 'lucksiyo.nekoweb.org'
+    const domain = 'lucksiyo.xyz'
 
     const fetchSiteInfo = async () => {
       try {

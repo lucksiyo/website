@@ -127,7 +127,7 @@ const About = () => {
 
                 <a 
                   className="social-link"
-                  href="https://nekoweb.org/follow/lucksiyo.nekoweb.org"
+                  href="https://nekoweb.org/follow/lucksiyo.xyz"
                   target='_blank'
                   rel='noopenner noreferrer'
                 >
@@ -181,9 +181,10 @@ const About = () => {
               <hr className="my-1 border-t-4" />
               <div className="my-4 w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
                 <img className="site-button w-[88px] h-[31px]" src={button} />
-                <textarea className="bg-white border-1" readOnly>
-                  &lt;a href="https://lucksiyo.nekoweb.org/"&gt; &lt;img src="https://lucksiyo.nekoweb.org/resources/button.jpg" /&gt;&lt;/a&gt;
-                </textarea>
+                <textarea readOnly
+                  className="bg-white border-1"
+                  value="<a href='https://lucksiyo.xyz/'> <img src='https://lucksiyo.xyz/resources/button_v1.jpg' /></a>"
+                />
               </div>
               <Buttons />
             </div>
