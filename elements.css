@@ -1,14 +1,7 @@
 /*!@nkb "domain":"lucksiyo.xyz","rss":"","overflow":false,"readonly":false */
-/*
-  Don't use this file to edit your site style! Create a different CSS file for that.
-  This file defines how custom elements (like sitebox) will look like.
-  Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion!
-*/
 
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
-
 .site-box {
-  /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
   background: url(https://lucksiyo.nekoweb.org/lucksiyo.xyz/resources/grain.svg), #40798C;
   font-family: monospace;
   display: flex;
@@ -29,7 +22,7 @@
 /* domain */
 .site-box > a > p {
   color: white;
-  font-size: 3.75vw;
+  font-size: 2.25rem;
   text-transform: uppercase;
   text-shadow: 0 0 8px #0B2027;
   z-index: 10;
@@ -40,7 +33,7 @@
   display: none;
 }
 
-/* title */
+/* site title */
 .site-box > a > span {
   display: none;
 }
@@ -48,17 +41,15 @@
 .site-box::after {
   position: absolute;
   content: url(https://lucksiyo.nekoweb.org/lucksiyo.xyz/resources/icon.png);
-  bottom: 3rem;
-  right: 1.5rem;
-  height: 10rem;
-  width: 6rem;
+  bottom: 2.5rem;
+  right: 1rem;
+  height: 11rem;
+  width: 7rem;
   scale: 20%;
   transition: all 0.3s ease-out;
 }
 
 .site-box:hover::after {
-  height: 10.5rem;
-  width: 6.5rem;
   rotate: 2.5deg;
 }
 
@@ -67,12 +58,14 @@
   color: #0B2027;
   background: url(https://lucksiyo.nekoweb.org/lucksiyo.xyz/resources/grain.svg), #F6F1D1;
   font-family: monospace;
-  border: 2px solid #0B2027;
+  border: 1px solid #0B2027;
   border-radius: 0;
 }
 
 .post-box .post-title {
+  margin-top: 1rem;
   text-transform: uppercase;
   font-family: monospace;
+  font-size: 1.25rem;
   font-style: normal;
 }
