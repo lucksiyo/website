@@ -99,7 +99,7 @@ const Navbar = () => {
         <div className="flex items-center md:hidden">
           <button 
             onClick={() => setShowMobileNav(!showMobileNav)}
-            className="p-1 border-1 rounded hover:bg-taupe-900/10"
+            className="p-1 border-1 hover:bg-taupe-900/10"
           >
             <MdMenu size={'1.5rem'} />
           </button>
@@ -118,7 +118,7 @@ const Navbar = () => {
           >
             <button 
               onClick={() => setShowMobileNav(!showMobileNav)}
-              className="p-1 border-1 rounded hover:bg-taupe-900/10"
+              className="p-1 border-1 hover:bg-taupe-900/10"
             >
               <MdClose size={'1.5rem'} />
             </button>
