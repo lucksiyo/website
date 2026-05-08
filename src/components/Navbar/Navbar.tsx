@@ -100,6 +100,8 @@ const Navbar = () => {
           <button 
             onClick={() => setShowMobileNav(!showMobileNav)}
             className="p-1 border-1 hover:bg-taupe-900/10"
+            onMouseEnter={() => hoverSound()}
+            onMouseDown={() => activeSound()}
           >
             <MdMenu size={'1.5rem'} />
           </button>
@@ -119,6 +121,8 @@ const Navbar = () => {
             <button 
               onClick={() => setShowMobileNav(!showMobileNav)}
               className="p-1 border-1 hover:bg-taupe-900/10"
+              onMouseEnter={() => hoverSound()}
+              onMouseDown={() => activeSound()}
             >
               <MdClose size={'1.5rem'} />
             </button>
@@ -126,12 +130,16 @@ const Navbar = () => {
               <a 
                 href='/projects'
                 className="hover:text-(--accent)"
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
               >
                 [ Web/App Dev ]
               </a>
               <a
                 href='/about'
                 className="hover:text-(--accent)"
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
               >
                 [ About ]
               </a>
