@@ -64,15 +64,15 @@ const MusicPlayer = ({ username }: { username: string }) => {
         {isPlaying ? 
           <div className='flex items-center gap-2'>
             <p className='font-[600] uppercase'>Now Playing</p> 
-            <div className='h-[0.5rem] w-[0.5rem] bg-green-800/70 rounded-full'></div>
+            <div className='h-[0.75rem] w-[0.75rem] bg-green-800/70 rounded-full'></div>
           </div>
           :
           <div className='flex items-center gap-2'>
             <p className='font-[600] uppercase'>Last Played</p> 
-            <div className='h-[0.5rem] w-[0.5rem] bg-red-800/70 rounded-full'></div>
+            <div className='h-[0.75rem] w-[0.75rem] bg-red-800/70 rounded-full'></div>
           </div>
         }
-        <div className='mt-2 flex flex-col text-center lg:items-start'>
+        <div className='flex flex-col text-center lg:items-start'>
           <p>{track.name}</p>
           <p className='text-[0.875rem]'>by {track.artist['#text']}</p>
           <p className='text-[0.875rem]'>from {track.album['#text']}</p>

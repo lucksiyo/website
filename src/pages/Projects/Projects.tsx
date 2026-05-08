@@ -1,14 +1,17 @@
+import useSound from 'use-sound'
 import { GoArrowUpRight } from "react-icons/go"
-
-import spacelabPreview from '../../assets/images/spacelab_preview.webp'
-import tempoPreview from '../../assets/images/tempo_preview.webp'
-
 import Navbar from "../../components/Navbar/Navbar"
 import Footer from "../../components/Footer/Footer"
-
+import spacelabPreview from '../../assets/images/spacelab_preview.webp'
+import tempoPreview from '../../assets/images/tempo_preview.webp'
+import hoverSFX from '../../assets/sounds/sfx_hover.wav'
+import activeSFX from '../../assets/sounds/sfx_active.wav'
 import './Projects.css'
 
 const Projects = () => {
+  const [ hoverSound ] = useSound(hoverSFX)
+  const [ activeSound ] = useSound(activeSFX)
+
   return (
     <>
       <Navbar />
@@ -43,6 +46,8 @@ const Projects = () => {
                   href='https://github.com/lucksiyo/tempo'
                   target='_blank'
                   rel='noopenner noreferrer'
+                  onMouseEnter={() => hoverSound()}
+                  onMouseDown={() => activeSound()}
                 >
                   Source Code
                   <GoArrowUpRight />
@@ -71,6 +76,8 @@ const Projects = () => {
                   href='https://spacelab.space/'
                   target='_blank'
                   rel='noopenner noreferrer'
+                  onMouseEnter={() => hoverSound()}
+                  onMouseDown={() => activeSound()}
                 >
                   View Project
                   <GoArrowUpRight />

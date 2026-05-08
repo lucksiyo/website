@@ -1,10 +1,16 @@
-import { useEffect, useState } from "react";
-import { AnimatePresence, easeInOut, motion, useMotionValueEvent, useScroll } from "motion/react";
-import { MdAccessTimeFilled, MdClose, MdLocationOn, MdMenu } from "react-icons/md";
+import { useEffect, useState } from "react"
+import { AnimatePresence, easeInOut, motion, useMotionValueEvent, useScroll } from "motion/react"
+import useSound from 'use-sound'
+import { MdAccessTimeFilled, MdClose, MdLocationOn, MdMenu } from "react-icons/md"
+import hoverSFX from '../../assets/sounds/sfx_hover.wav'
+import activeSFX from '../../assets/sounds/sfx_active.wav'
 
 import './Navbar.css'
 
 const Navbar = () => {
+  const [ hoverSound ] = useSound(hoverSFX)
+  const [ activeSound ] = useSound(activeSFX)
+
   // hide/show with scroll direction
   const { scrollY } = useScroll()
   const [hidden, setHidden] = useState(false)
@@ -41,6 +47,8 @@ const Navbar = () => {
         <div className="flex items-center gap-4">
           <a className="font-['Rubik'] font-[500] text-[2.25rem] hover:text-(--primary)" 
             href="/"
+            onMouseEnter={() => hoverSound()}
+            onMouseDown={() => activeSound()}
           >
             lucksiyo!
           </a>
@@ -70,8 +78,22 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-4 font-[600]">
-          <a href='/projects' className="hover:text-(--accent)">[ Web/App Dev ]</a>
-          <a href='/about' className="hover:text-(--accent)">[ About ]</a>
+          <a 
+            href='/projects' 
+            className="hover:text-(--accent)"
+            onMouseEnter={() => hoverSound()}
+            onMouseDown={() => activeSound()}  
+          >
+            [ Web/App Dev ]
+          </a>
+          <a 
+            href='/about' 
+            className="hover:text-(--accent)"
+            onMouseEnter={() => hoverSound()}
+            onMouseDown={() => activeSound()}
+          >
+            [ About ]
+          </a>
         </div>
 
         <div className="flex items-center md:hidden">

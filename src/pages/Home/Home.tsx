@@ -1,17 +1,22 @@
 import { useEffect, useState } from 'react'
 import { easeOut, motion } from 'motion/react'
+import useSound from 'use-sound'
 import { MdOutlineArrowForward } from "react-icons/md"
 import { MdOutlineClose } from "react-icons/md"
 import { MdAccessTimeFilled } from "react-icons/md"
 import { MdLocationOn } from "react-icons/md"
+import hoverSFX from '../../assets/sounds/sfx_hover.wav'
+import activeSFX from '../../assets/sounds/sfx_active.wav'
 import splashOptions from '../../assets/splash_text.json'
-
 import './Home.css'
 
 const rng = Math.floor(Math.random() * splashOptions.length)
 const randomText = splashOptions[rng]
 
 const Home = () => {
+  const [ hoverSound ] = useSound(hoverSFX)
+  const [ activeSound ] = useSound(activeSFX)
+
   const [splashText] = useState(randomText)
 
   // get current date/time
@@ -77,6 +82,8 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.3, ease: easeOut }}
+            onMouseEnter={() => hoverSound()}
+            onMouseDown={() => activeSound()}
           >
             <p>Web/App Dev</p>
             <MdOutlineArrowForward />
@@ -87,6 +94,8 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.3, ease: easeOut }}
+            onMouseEnter={() => hoverSound()}
+            onMouseDown={() => activeSound()}
           >
             About
             <MdOutlineArrowForward />
@@ -97,6 +106,8 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.3, ease: easeOut }}
+            onMouseEnter={() => hoverSound()}
+            onMouseDown={() => activeSound()}
           >
             <p>More coming soon.</p>
             <MdOutlineClose />
@@ -131,11 +142,6 @@ const Home = () => {
           })}
           <p>&nbsp;]</p>
         </div>
-      </div>
-
-      {/* bottom text */} 
-      <div className='w-full px-4 py-2 absolute bottom-0 left-0 right-0 flex justify-center items-center font-[600] text-sm text-(--accent)'>
-        <p>[ Prod. 2026 by lucksiyo! ]</p>
       </div>
     </motion.div>  
   );

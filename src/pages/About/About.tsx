@@ -1,20 +1,23 @@
+import useSound from 'use-sound'
 import { MdArrowOutward } from "react-icons/md"
 import { FaGithub, FaItchIo, FaInstagram, FaTwitch, FaYoutube, FaCat } from "react-icons/fa"
 import { FaBluesky } from "react-icons/fa6";
-
 import Navbar from "../../components/Navbar/Navbar"
 import Footer from "../../components/Footer/Footer"
-import MusicPlayer from "./MusicPlayer/MusicPlayer"
 import SiteStats from "./SiteStats/SiteStats"
+import ExpBar from "./ExpBar/ExpBar";
+import MusicPlayer from "./MusicPlayer/MusicPlayer"
 import Buttons from './Buttons/Buttons'
-
 import button from '../../assets/images/buttons/button.jpg'
 import icon from '../../assets/images/icon.png'
-
+import hoverSFX from '../../assets/sounds/sfx_hover.wav'
+import activeSFX from '../../assets/sounds/sfx_active.wav'
 import './About.css'
-import ExpBar from "./ExpBar/ExpBar";
 
 const About = () => {
+  const [ hoverSound ] = useSound(hoverSFX)
+  const [ activeSound ] = useSound(activeSFX)
+
   return (
     <>
       <Navbar />
@@ -40,6 +43,8 @@ const About = () => {
                   href="https://github.com/lucksiyo"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onMouseEnter={() => hoverSound()}
+                  onMouseDown={() => activeSound()}
                 >
                   <div className="flex items-center gap-2">
                     <FaGithub />
@@ -55,6 +60,8 @@ const About = () => {
                   href="https://lucksiyo.itch.io/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onMouseEnter={() => hoverSound()}
+                  onMouseDown={() => activeSound()}
                 >
                   <div className="flex items-center gap-2">
                     <FaItchIo />
@@ -69,7 +76,9 @@ const About = () => {
                   className="social-link"
                   href="https://bsky.app/profile/lucksiyo.xyz"
                   target="_blank"
-                  rel="noopener noreferrer" 
+                  rel="noopener noreferrer"
+                  onMouseEnter={() => hoverSound()}
+                  onMouseDown={() => activeSound()}
                 >
                   <div className="flex items-center gap-2">
                     <FaBluesky />
@@ -85,6 +94,8 @@ const About = () => {
                   href="https://www.instagram.com/lucksiyo"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onMouseEnter={() => hoverSound()}
+                  onMouseDown={() => activeSound()}
                 >
                   <div className="flex items-center gap-2">
                     <FaInstagram />
@@ -100,6 +111,8 @@ const About = () => {
                   href="https://www.twitch.tv/lucksiyo"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onMouseEnter={() => hoverSound()}
+                  onMouseDown={() => activeSound()}
                 >
                   <div className="flex items-center gap-2">
                     <FaTwitch />
@@ -115,6 +128,8 @@ const About = () => {
                   href="https://www.youtube.com/@lucksiyo"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onMouseEnter={() => hoverSound()}
+                  onMouseDown={() => activeSound()}
                 >
                   <div className="flex items-center gap-2">
                     <FaYoutube />
@@ -130,6 +145,8 @@ const About = () => {
                   href="https://nekoweb.org/follow/lucksiyo.xyz"
                   target='_blank'
                   rel='noopenner noreferrer'
+                  onMouseEnter={() => hoverSound()}
+                  onMouseDown={() => activeSound()}
                 >
                   <div className="flex items-center gap-2">
                     <FaCat />
@@ -180,7 +197,12 @@ const About = () => {
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Buttons</h3>
               <hr className="my-1 border-t-4" />
               <div className="my-4 w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
-                <img className="site-button w-[88px] h-[31px]" src={button} />
+                <img 
+                  className="site-button w-[88px] h-[31px]" 
+                  src={button}
+                  alt='88x31 button for lucksiyo.xyz'
+                  onMouseEnter={() => hoverSound()}
+                />
                 <textarea readOnly
                   className="bg-white border-1"
                   value="<a href='https://lucksiyo.xyz/'> <img src='https://lucksiyo.xyz/resources/button_v1.jpg' /></a>"
