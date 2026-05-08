@@ -77,7 +77,7 @@ const Navbar = () => {
         <div className="flex items-center md:hidden">
           <button 
             onClick={() => setShowMobileNav(!showMobileNav)}
-            className=""
+            className="p-1 border-1 rounded hover:bg-taupe-900/10"
           >
             <MdMenu size={'1.5rem'} />
           </button>
@@ -92,26 +92,28 @@ const Navbar = () => {
             whileInView={{ x: 0, opacity: 1 }}
             exit={{ x: 50, opacity: 0 }}
             transition={{ ease: easeInOut, duration: 0.3 }}
-            className="mobile-menu fixed p-4 pb-8 top-0 right-0 z-1000 flex flex-col items-end gap-2 border-1 font-[600]"
+            className="mobile-menu fixed px-4 pt-2 pb-8 top-0 right-0 z-1000 flex flex-col items-end gap-4 border-1 font-[600]"
           >
             <button 
               onClick={() => setShowMobileNav(!showMobileNav)}
-              className=""
+              className="p-1 border-1 rounded hover:bg-taupe-900/10"
             >
               <MdClose size={'1.5rem'} />
             </button>
-            <a 
-              href='/projects'
-              className="hover:text-(--accent)"
-            >
-              [ Web/App Dev ]
-            </a>
-            <a
-              href='/about'
-              className="hover:text-(--accent)"
-            >
-              [ About ]
-            </a>
+            <div className="px-8 flex flex-col items-end gap-2">
+              <a 
+                href='/projects'
+                className="hover:text-(--accent)"
+              >
+                [ Web/App Dev ]
+              </a>
+              <a
+                href='/about'
+                className="hover:text-(--accent)"
+              >
+                [ About ]
+              </a>
+            </div>            
           </motion.nav>
         )}
       </AnimatePresence>
