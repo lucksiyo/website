@@ -11,7 +11,7 @@ const Footer = () => {
           className="font-['Rubik'] text-(--primary) text-[6vw] uppercase"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
+          transition={{ duration: 0.5 }}
         >
           Prod. 2026 by
         </motion.p>
@@ -19,7 +19,7 @@ const Footer = () => {
           className="font-['Rubik'] text-[20vw] font-medium leading-[14vw]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
+          transition={{ duration: 0.5 }}
         >
           lucksiyo!
         </motion.h6>

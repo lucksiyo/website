@@ -10,7 +10,8 @@
 
   scroll-behavior: smooth;
   overscroll-behavior: none;
-  font-family: 'SourceCodePro', monospace;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
   color: var(--dark);
   background-color: var(--light);
 }
@@ -36,17 +37,17 @@ button:hover {
 }
 
 @font-face {
-  font-family: SourceCodePro;
+  font-family: JetBrains Mono;
   font-style: normal;
-  font-weight: 200 900;
+  font-weight: 100 800;
   font-display: swap;
-  src: url("./assets/fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype");
+  src: url("./assets/fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: SourceCodePro;
+  font-family: JetBrains Mono;
   font-style: italic;
-  font-weight: 200 900;
+  font-weight: 100 800;
   font-display: swap;
-  src: url("./assets/fonts/SourceCodePro-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("./assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf") format("truetype");
 }
