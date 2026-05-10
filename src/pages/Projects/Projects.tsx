@@ -19,7 +19,7 @@ const Projects = () => {
         id='projects' 
         className="p-16 py-24 lg:px-32 xl:px-64 2xl:px-80 flex flex-col gap-8 md:gap-16"
       >
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-8 items-center">
+        <div className="md:px-8 xl:px-16 flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-8 items-center">
           <img
             className="border-1"
             src={tempoPreview}
@@ -56,7 +56,7 @@ const Projects = () => {
 
         <hr />
 
-        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-4 md:gap-8 items-center">
+        <div className="md:px-8 xl:px-16 flex flex-col-reverse md:grid md:grid-cols-2 gap-4 md:gap-8 items-center">
           <div>
             <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">The Spacelab Nonprofit</h3>
             <hr className="my-1 border-t-4" />

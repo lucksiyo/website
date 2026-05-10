@@ -16,5 +16,5 @@
 
 .project-link:hover {
   background: var(--primary);
-  box-shadow: 4px 4px 0 var(--secondary);
+  box-shadow: 4px 4px 0 var(--dark);
 }

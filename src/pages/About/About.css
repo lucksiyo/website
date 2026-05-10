@@ -15,7 +15,7 @@
   color: var(--light);
   background: var(--primary);
   border: 1px solid var(--primary);
-  box-shadow: 4px 4px 0 var(--secondary);
+  box-shadow: 4px 4px 0 var(--dark);
 }
 
 .site-button {
@@ -24,6 +24,7 @@
 }
 
 .site-button:hover {
-  scale: 1.25;
+  scale: 1.1;
   border: 1px solid var(--dark);
+  box-shadow: 4px 4px 0 var(--dark);
 }
