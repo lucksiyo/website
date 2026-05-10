@@ -1,3 +1,19 @@
 #projects {
   background: url(../../assets/images/grain.svg);
 }
+
+.project-link {
+  margin-top: 1rem;
+  padding: 0.25rem 1rem;
+  color: var(--light);
+  background: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-link:hover {
+  background: var(--primary);
+  box-shadow: 4px 4px 0 var(--secondary);
+}

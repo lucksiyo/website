@@ -1,5 +1,4 @@
 import useSound from 'use-sound'
-import { MdArrowOutward } from "react-icons/md"
 import { FaGithub, FaItchIo, FaInstagram, FaTwitch, FaYoutube, FaCat } from "react-icons/fa"
 import { FaBluesky } from "react-icons/fa6";
 import Navbar from "../../components/Navbar/Navbar"
@@ -21,197 +20,140 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <section id="about" className="py-20 px-16 lg:px-32 xl:px-64 2xl:px-84">
-
-        <div className="flex flex-col-reverse md:grid md:grid-cols-3 gap-8 md:gap-8">
-          {/* smol col */}
-          <div className="md:col-span-1 flex flex-col gap-8">
-            <div className="p-4 border-1">
-              <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Site Stats</h3>
-              <hr className="my-1 border-t-4" />              
-              <SiteStats />
-              
-            </div>
-
-            <div id='links' className="p-4 border-1">
-              <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Links</h3>
-              <hr className="my-1 border-t-4" />
-              <div>
-
-                <a 
-                  className="social-link"
-                  href="https://github.com/lucksiyo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onMouseEnter={() => hoverSound()}
-                  onMouseDown={() => activeSound()}
-                >
-                  <div className="flex items-center gap-2">
-                    <FaGithub />
-                    <p>GitHub</p>
-                  </div>
-                  <MdArrowOutward />
-                </a>
-                
-                <hr className='my-1' />
-                
-                <a 
-                  className="social-link"
-                  href="https://lucksiyo.itch.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onMouseEnter={() => hoverSound()}
-                  onMouseDown={() => activeSound()}
-                >
-                  <div className="flex items-center gap-2">
-                    <FaItchIo />
-                    <p>Itch.io</p>
-                  </div>
-                  <MdArrowOutward />
-                </a>
-                
-                <hr className='my-1' />
-                
-                <a 
-                  className="social-link"
-                  href="https://bsky.app/profile/lucksiyo.xyz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onMouseEnter={() => hoverSound()}
-                  onMouseDown={() => activeSound()}
-                >
-                  <div className="flex items-center gap-2">
-                    <FaBluesky />
-                    <p>Bluesky</p>
-                  </div>
-                  <MdArrowOutward />
-                </a>
-                
-                <hr className='my-1' />
-                
-                <a 
-                  className="social-link"
-                  href="https://www.instagram.com/lucksiyo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onMouseEnter={() => hoverSound()}
-                  onMouseDown={() => activeSound()}
-                >
-                  <div className="flex items-center gap-2">
-                    <FaInstagram />
-                    <p>Instagram</p>
-                  </div>
-                  <MdArrowOutward />
-                </a>       
-                
-                <hr className='my-1' />
-                
-                <a 
-                  className="social-link"
-                  href="https://www.twitch.tv/lucksiyo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onMouseEnter={() => hoverSound()}
-                  onMouseDown={() => activeSound()}
-                >
-                  <div className="flex items-center gap-2">
-                    <FaTwitch />
-                    <p>Twitch</p>
-                  </div>
-                  <MdArrowOutward />
-                </a>
-                
-                <hr className='my-1' />
-                
-                <a 
-                  className="social-link"
-                  href="https://www.youtube.com/@lucksiyo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onMouseEnter={() => hoverSound()}
-                  onMouseDown={() => activeSound()}
-                >
-                  <div className="flex items-center gap-2">
-                    <FaYoutube />
-                    <p>YouTube</p>
-                  </div>
-                  <MdArrowOutward />
-                </a>
-
-                <hr className='my-1' />
-
-                <a 
-                  className="social-link"
-                  href="https://nekoweb.org/follow/lucksiyo.xyz"
-                  target='_blank'
-                  rel='noopenner noreferrer'
-                  onMouseEnter={() => hoverSound()}
-                  onMouseDown={() => activeSound()}
-                >
-                  <div className="flex items-center gap-2">
-                    <FaCat />
-                    <p>Follow on Nekoweb</p>
-                  </div>
-                  <MdArrowOutward />
-                </a>
-                
-              </div>
-            </div>
+      <section id="about" className="p-16 py-24 lg:px-32 xl:px-64 2xl:px-80 flex flex-col gap-8 md:gap-16">
+        <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col gap-4">
+            <img 
+              className="p-8 w-[160px] max-h-[160px] object-contain bg-white border-1 rounded-full"
+              src={icon}
+              alt="luxio plushie"
+            />
+            <ExpBar />
           </div>
-          
-          {/* big col */}
-          <div className="md:col-span-2 flex flex-col gap-8">
-            <div className="p-4 border-1 flex flex-col">
-              <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">About</h3>
-              <hr className="my-1 border-t-4" />
-              <div className="flex flex-col items-center lg:grid lg:grid-cols-3 gap-4">
-                <div className="pt-2 flex flex-col justify-center items-center lg:col-span-1 gap-2">
-                  <img 
-                    className="w-[150px] max-h-[150px] object-contain"
-                    src={icon}
-                    alt="luxio plushie"
-                  />
-                  <ExpBar />
-                </div>                
-                <p className="lg:col-span-2">
-                  Hey, I'm <span className="font-[600] text-(--primary)">lucksiyo!</span> and I'm a creative software dev. My interests include
-                  open source, computer networks, cinematography, and tabletop/video
-                  games.
-                </p>
-              </div>
-              <a
-                href="#links"
-                className="md:hidden mt-4 py-1 flex justify-center text-center text-(--light) bg-(--dark) hover:bg-(--primary)"
+          <div className="flex flex-col md:px-16 xl:px-32 gap-8">
+            <p className='text-center'>
+              Hey, I'm <span className="font-[600] text-(--primary)">lucksiyo!</span> and
+              I'm a creative software dev. My interests include open source, computer
+              networks, cinematography, and tabletop/video games.
+            </p>
+            <div className='flex flex-wrap justify-center gap-4'>
+              <a 
+                className="social-link"
+                href="https://github.com/lucksiyo"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
               >
-                Contact Me
+                  <FaGithub size={'1.25rem'} />
+                  <p>GitHub</p>
+              </a>
+                            
+              <a 
+                className="social-link"
+                href="https://lucksiyo.itch.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
+              >
+                  <FaItchIo size={'1.25rem'} />
+                  <p>Itch.io</p>
+              </a>
+                            
+              <a 
+                className="social-link"
+                href="https://bsky.app/profile/lucksiyo.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
+              >
+                  <FaBluesky size={'1.25rem'} />
+                  <p>Bluesky</p>
+              </a>
+                            
+              <a 
+                className="social-link"
+                href="https://www.instagram.com/lucksiyo"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
+              >
+                  <FaInstagram size={'1.25rem'} />
+                  <p>Instagram</p>
+              </a>       
+                            
+              <a 
+                className="social-link"
+                href="https://www.twitch.tv/lucksiyo"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
+              >
+                  <FaTwitch size={'1.25rem'} />
+                  <p>Twitch</p>
+              </a>
+                            
+              <a 
+                className="social-link"
+                href="https://www.youtube.com/@lucksiyo"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
+              >
+                  <FaYoutube size={'1.25rem'} />
+                  <p>YouTube</p>
+              </a>
+
+              <a 
+                className="social-link"
+                href="https://nekoweb.org/follow/lucksiyo.xyz"
+                target='_blank'
+                rel='noopenner noreferrer'
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
+              >
+                  <FaCat size={'1.25rem'} />
+                  <p>Follow on Nekoweb</p>
               </a>
             </div>
+          </div>         
+        </div>
 
-            <div className="p-4 border-1">
-              <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Last.fm</h3>
-              <hr className="my-1 border-t-4" />
-              <MusicPlayer username="flxjc" />
-            </div>
+        <hr />
 
-            <div className="p-4 border-1">
-              <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Buttons</h3>
-              <hr className="my-1 border-t-4" />
-              <div className="my-4 w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
-                <img 
-                  className="site-button w-[88px] h-[31px]" 
-                  src={button}
-                  alt='88x31 button for lucksiyo.xyz'
-                  onMouseEnter={() => hoverSound()}
-                />
-                <textarea readOnly
-                  className="bg-white border-1"
-                  value="<a href='https://lucksiyo.xyz/'> <img src='https://lucksiyo.xyz/resources/button_v1.jpg' /></a>"
-                />
-              </div>
-              <Buttons />
-            </div>
+        <div className="p-4 border-1">
+          <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Site Stats</h3>
+          <hr className="my-1 border-t-4" />              
+          <SiteStats />
+        </div>
+
+        <div className="p-4 border-1">
+          <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Last.fm</h3>
+          <hr className="my-1 border-t-4" />
+          <MusicPlayer username="flxjc" />
+        </div>
+
+        <div className="p-4 border-1">
+          <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Buttons</h3>
+          <hr className="my-1 border-t-4" />
+          <div className="my-4 w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
+            <img 
+              className="site-button w-[88px] h-[31px]" 
+              src={button}
+              alt='88x31 button for lucksiyo.xyz'
+              onMouseEnter={() => hoverSound()}
+            />
+            <textarea readOnly
+              className="bg-white border-1"
+              value="<a href='https://lucksiyo.xyz/'> <img src='https://lucksiyo.xyz/resources/button_v1.jpg' /></a>"
+            />
           </div>
-
+          <Buttons />
         </div>
 
       </section>

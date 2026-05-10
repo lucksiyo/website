@@ -3,19 +3,18 @@
 }
 
 .social-link {
-  margin: 0.25rem 0;
-  padding: 0.25rem;
+  padding: 0.25rem 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 0.25rem;
-  transition: padding 0.3s ease-out;
+  gap: 1rem;
+  border: 1px solid var(--dark);
 }
 
 .social-link:hover {
-  padding: 0.25rem 1rem;
   color: var(--light);
-  background-color: var(--primary);
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  box-shadow: 4px 4px 0 var(--secondary);
 }
 
 .site-button {
