@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  transition: box-shadow 0.2s linear;
 }
 
 .project-link:hover {

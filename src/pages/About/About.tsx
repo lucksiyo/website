@@ -20,7 +20,7 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <section id="about" className="p-16 py-24 lg:px-32 xl:px-64 2xl:px-80 flex flex-col gap-8 md:gap-16">
+      <section id="about" className="p-16 py-24 lg:px-32 xl:px-64 2xl:px-80 flex flex-col gap-8 md:gap-12">
         <div className="flex flex-col items-center gap-8">
           <div className="flex flex-col gap-4">
             <img 
@@ -30,7 +30,7 @@ const About = () => {
             />
             <ExpBar />
           </div>
-          <div className="flex flex-col md:px-16 xl:px-32 gap-8">
+          <div className="md:px-8 xl:px-16 flex flex-col gap-8">
             <p className='text-center'>
               Hey, I'm <span className="font-[600] text-(--primary)">lucksiyo!</span> and
               I'm a creative software dev. My interests include open source, computer
@@ -126,36 +126,43 @@ const About = () => {
 
         <hr />
 
-        <div className="p-4 border-1">
-          <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Site Stats</h3>
-          <hr className="my-1 border-t-4" />              
-          <SiteStats />
-        </div>
+        <div className='md:px-8 xl:px-16 flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+          
+          <div className='col-span-1 flex flex-col gap-8'>
+            <div className="p-4 border-1">
+              <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Site Stats</h3>
+              <hr className="my-1 border-t-4" />              
+              <SiteStats />
+            </div>
 
-        <div className="p-4 border-1">
-          <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Last.fm</h3>
-          <hr className="my-1 border-t-4" />
-          <MusicPlayer username="flxjc" />
-        </div>
-
-        <div className="p-4 border-1">
-          <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Buttons</h3>
-          <hr className="my-1 border-t-4" />
-          <div className="my-4 w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
-            <img 
-              className="site-button w-[88px] h-[31px]" 
-              src={button}
-              alt='88x31 button for lucksiyo.xyz'
-              onMouseEnter={() => hoverSound()}
-            />
-            <textarea readOnly
-              className="bg-white border-1"
-              value="<a href='https://lucksiyo.xyz/'> <img src='https://lucksiyo.xyz/resources/button_v1.jpg' /></a>"
-            />
+            <div className="p-4 border-1">
+              <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Last.fm</h3>
+              <hr className="my-1 border-t-4" />
+              <MusicPlayer username="flxjc" />
+            </div>
           </div>
-          <Buttons />
-        </div>
 
+          <div className='md:col-span-1 lg:col-span-2'>
+            <div className="p-4 border-1">
+              <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Buttons</h3>
+              <hr className="my-1 border-t-4" />
+              <div className="my-4 w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
+                <img 
+                  className="site-button w-[88px] h-[31px]" 
+                  src={button}
+                  alt='88x31 button for lucksiyo.xyz'
+                  onMouseEnter={() => hoverSound()}
+                />
+                <textarea readOnly
+                  className="bg-white border-1"
+                  value="<a href='https://lucksiyo.xyz/'> <img src='https://lucksiyo.xyz/resources/button_v1.jpg' /></a>"
+                />
+              </div>
+              <Buttons />
+            </div>
+          </div>
+
+        </div>
       </section>
       <Footer />
     </>
