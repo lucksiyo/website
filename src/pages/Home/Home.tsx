@@ -85,7 +85,7 @@ const Home = () => {
             onMouseEnter={() => hoverSound()}
             onMouseDown={() => activeSound()}
           >
-            <p>Web/App Dev</p>
+            <p>Projects</p>
             <MdOutlineArrowForward />
           </motion.a>
           <motion.a 

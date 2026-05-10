@@ -84,7 +84,7 @@ const Navbar = () => {
             onMouseEnter={() => hoverSound()}
             onMouseDown={() => activeSound()}  
           >
-            [ Web/App Dev ]
+            [ Projects ]
           </a>
           <a 
             href='/about' 
@@ -133,7 +133,7 @@ const Navbar = () => {
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
-                [ Web/App Dev ]
+                [ Projects ]
               </a>
               <a
                 href='/about'
