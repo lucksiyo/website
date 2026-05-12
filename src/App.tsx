@@ -4,6 +4,7 @@ import { UseSmoothScroll } from 'smooth-motion'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Projects from './pages/Projects/Projects'
+import Games from './pages/Games/Games'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/projects' element={<Projects />} />
+            <Route path='/games' element={<Games /> } />
           </Routes>
         </BrowserRouter>      
     </div>
