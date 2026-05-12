@@ -1,6 +1,7 @@
 import useSound from 'use-sound'
 import hoverSFX from '../../../assets/sounds/sfx_hover.wav'
 import activeSFX from '../../../assets/sounds/sfx_active.wav'
+import animalCrossing from '../../../assets/images/buttons/animal-crossing.gif'
 import cssIsAwesome from '../../../assets/images/buttons/css-is-awesome.png'
 import dreamInHTML from '../../../assets/images/buttons/dream-in-html.gif'
 import flexbox from '../../../assets/images/buttons/flexbox.gif'
@@ -62,6 +63,7 @@ const Buttons = () => {
       <img className='button-88x31' alt="Game Boy Color" src={gameBoyColor} onMouseEnter={() => hoverSound()} />
       <img className='button-88x31' alt="I miss using Pictochat" src={pictochat} onMouseEnter={() => hoverSound()} />
       <img className='button-88x31' alt="Pokémon" src={pokemon} onMouseEnter={() => hoverSound()} />
+      <img className='button-88x31' alt="Animal Crossing" src={animalCrossing} onMouseEnter={() => hoverSound()} />
       <img className='button-88x31' alt="Minecraft" src={minecraft} onMouseEnter={() => hoverSound()} />
       <img className='button-88x31' alt="Stardew Valley" src={stardewValley} onMouseEnter={() => hoverSound()} />
       <img className='button-88x31' alt="Garlic bread wow my favorite" src={garlicBread} onMouseEnter={() => hoverSound()} />
