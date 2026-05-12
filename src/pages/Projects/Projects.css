@@ -5,12 +5,13 @@
 .project-link {
   margin-top: 1rem;
   padding: 0.25rem 1rem;
+  width: 160px;
   color: var(--light);
   background: var(--dark);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   transition: box-shadow 0.2s linear;
 }
 

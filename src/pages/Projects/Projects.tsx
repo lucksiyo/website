@@ -1,5 +1,6 @@
 import useSound from 'use-sound'
-import { GoArrowUpRight } from "react-icons/go"
+import { FaCode } from 'react-icons/fa6'
+import { FiGlobe } from 'react-icons/fi'
 import Navbar from "../../components/Navbar/Navbar"
 import Footer from "../../components/Footer/Footer"
 import spacelabPreview from '../../assets/images/spacelab_preview.webp'
@@ -34,23 +35,26 @@ const Projects = () => {
             <p>
               A mobile app for health and menstrual cycle tracking that uses a local-only database.
             </p>
-            <div className="my-2 flex flex-wrap gap-2 text-xs font-[600]">
+            <div className="mt-2 flex flex-wrap gap-2 text-xs font-[600]">
               <p className="text-blue-900 bg-blue-200/20 px-2 border-1">TypeScript</p>
               <p className="text-sky-900 bg-sky-200/20 px-2 border-1">React Native</p>
               <p className="text-purple-900 bg-purple-200/20 px-2 border-1">Realm</p>
               <p className="text-yellow-900 bg-yellow-200/20 px-2 border-1">Expo</p>
             </div>
-            <a 
-              className="project-link"
-              href='https://github.com/lucksiyo/tempo'
-              target='_blank'
-              rel='noopenner noreferrer'
-              onMouseEnter={() => hoverSound()}
-              onMouseDown={() => activeSound()}
-            >
-              Source Code
-              <GoArrowUpRight />
-            </a>          
+            <div className='flex flex-col md:flex-row gap-4'>
+              <a 
+                className="project-link"
+                href='https://github.com/lucksiyo/tempo'
+                target='_blank'
+                rel='noopenner noreferrer'
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
+              >
+                <FaCode />
+                Source Code
+              </a>
+            </div>
+             
           </div>
         </div>
 
@@ -66,22 +70,35 @@ const Projects = () => {
             <p>
               A website for The Spacelab Nonprofit, sharing the organization's mission, vision, and core values.
             </p>
-            <div className="my-2 flex flex-wrap gap-2 text-xs font-[600]">
+            <div className="mt-2 flex flex-wrap gap-2 text-xs font-[600]">
               <p className="text-yellow-900 bg-yellow-200/20 px-2 border-1">JavaScript</p>
               <p className="text-sky-900 bg-sky-200/20 px-2 border-1">React</p>
               <p className="text-fuchsia-900 bg-fuchsia-200/20 px-2 border-1">SCSS</p>
             </div>
-            <a 
-              className="project-link"
-              href='https://spacelab.space/'
-              target='_blank'
-              rel='noopenner noreferrer'
-              onMouseEnter={() => hoverSound()}
-              onMouseDown={() => activeSound()}
-            >
-              View Project
-              <GoArrowUpRight />
-            </a>
+            <div className='flex flex-col lg:flex-row lg:gap-4'>
+              <a 
+                className="project-link"
+                href='https://spacelab.space/'
+                target='_blank'
+                rel='noopenner noreferrer'
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
+              >
+                <FiGlobe />
+                View Project
+              </a>
+              <a 
+                className="project-link"
+                href='https://github.com/spacelabdev/spacelab-react'
+                target='_blank'
+                rel='noopenner noreferrer'
+                onMouseEnter={() => hoverSound()}
+                onMouseDown={() => activeSound()}
+              >
+                <FaCode />
+                Source Code
+              </a>
+            </div>
           </div>
           <img
             className="border-1"
