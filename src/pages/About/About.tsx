@@ -12,10 +12,25 @@ import icon from '../../assets/images/icon.png'
 import hoverSFX from '../../assets/sounds/sfx_hover.wav'
 import activeSFX from '../../assets/sounds/sfx_active.wav'
 import './About.css'
+import { useState } from 'react';
 
 const About = () => {
   const [ hoverSound ] = useSound(hoverSFX)
   const [ activeSound ] = useSound(activeSFX)
+
+  const [ buttonHtml ] = useState(
+    "<a href='https://lucksiyo.xyz/'> <img src='https://lucksiyo.xyz/resources/button_v1.jpg' /></a>"
+  )
+
+  const handleCopyButtonHtml = async () => {
+    try {
+      await window.navigator.clipboard.writeText(buttonHtml)
+      alert ('Using this button? Send me yours too! :)')
+    } catch (err) {
+      console.error("Unable to copy to clipboard: ", err)
+      alert("Unable to copy to clipboard :(")
+    }
+  }
 
   return (
     <>
@@ -146,17 +161,15 @@ const About = () => {
             <div className="p-4 border-1">
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Buttons</h3>
               <hr className="my-1 border-t-4" />
-              <div className="my-4 w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
+              <div className="my-4 w-full flex flex-col justify-center items-center gap-1">
                 <img 
                   className="site-button w-[88px] h-[31px]" 
                   src={button}
                   alt='88x31 button for lucksiyo.xyz'
                   onMouseEnter={() => hoverSound()}
+                  onClick={handleCopyButtonHtml}
                 />
-                <textarea readOnly
-                  className="bg-white border-1"
-                  value="<a href='https://lucksiyo.xyz/'> <img src='https://lucksiyo.xyz/resources/button_v1.jpg' /></a>"
-                />
+                <p className='text-(--accent) text-xs italic'>Click to copy HTML</p>
               </div>
               <Buttons />
             </div>
