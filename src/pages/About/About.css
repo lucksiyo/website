@@ -26,5 +26,5 @@
 .site-button:hover {
   scale: 1.1;
   border: 1px solid var(--dark);
-  box-shadow: 3px 3px 0 var(--dark);
+  box-shadow: 4px 4px 0 var(--dark);
 }
