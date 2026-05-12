@@ -167,6 +167,7 @@ const About = () => {
                   src={button}
                   alt='88x31 button for lucksiyo.xyz'
                   onMouseEnter={() => hoverSound()}
+                  onMouseDown={() => activeSound()}
                   onClick={handleCopyButtonHtml}
                 />
                 <p className='text-(--accent) text-xs italic'>Click to copy HTML</p>
