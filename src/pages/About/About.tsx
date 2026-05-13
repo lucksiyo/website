@@ -60,7 +60,7 @@ const About = () => {
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
-                  <FaGithub size={'1.25rem'} />
+                  <FaGithub size={'1.125rem'} />
                   <p>GitHub</p>
               </a>
                             
@@ -72,7 +72,7 @@ const About = () => {
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
-                  <FaItchIo size={'1.25rem'} />
+                  <FaItchIo size={'1.125rem'} />
                   <p>Itch.io</p>
               </a>
                             
@@ -84,7 +84,7 @@ const About = () => {
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
-                  <FaBluesky size={'1.25rem'} />
+                  <FaBluesky size={'1.125rem'} />
                   <p>Bluesky</p>
               </a>
                             
@@ -96,7 +96,7 @@ const About = () => {
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
-                  <FaInstagram size={'1.25rem'} />
+                  <FaInstagram size={'1.125rem'} />
                   <p>Instagram</p>
               </a>       
                             
@@ -108,7 +108,7 @@ const About = () => {
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
-                  <FaTwitch size={'1.25rem'} />
+                  <FaTwitch size={'1.125rem'} />
                   <p>Twitch</p>
               </a>
                             
@@ -120,7 +120,7 @@ const About = () => {
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
-                  <FaYoutube size={'1.25rem'} />
+                  <FaYoutube size={'1.125rem'} />
                   <p>YouTube</p>
               </a>
 
@@ -132,7 +132,7 @@ const About = () => {
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
-                  <FaCat size={'1.25rem'} />
+                  <FaCat size={'1.125rem'} />
                   <p>Follow on Nekoweb</p>
               </a>
             </div>
@@ -146,13 +146,13 @@ const About = () => {
           <div className='col-span-1 flex flex-col gap-8'>
             <div className="p-4 border-1">
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Site Stats</h3>
-              <hr className="my-1 border-t-4" />              
+              <hr className="mt-1 mb-2 border-t-4" />              
               <SiteStats />
             </div>
 
             <div className="p-4 border-1">
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Last.fm</h3>
-              <hr className="my-1 border-t-4" />
+              <hr className="mt-1 mb-2 border-t-4" />
               <MusicPlayer username="flxjc" />
             </div>
           </div>
@@ -160,7 +160,7 @@ const About = () => {
           <div className='md:col-span-1 lg:col-span-2'>
             <div className="p-4 border-1">
               <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Buttons</h3>
-              <hr className="my-1 border-t-4" />
+              <hr className="mt-1 mb-2 border-t-4" />
               <div className="my-4 w-full flex flex-col justify-center items-center gap-1">
                 <img 
                   className="site-button w-[88px] h-[31px]" 

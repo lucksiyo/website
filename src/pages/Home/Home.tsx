@@ -80,7 +80,7 @@ const Home = () => {
             transition={{ delay: 0.5, duration: 0.3, ease: easeOut }}
           >
             <h2 className="font-['Rubik'] font-[500] text-[1.5rem] uppercase">Menu</h2>
-            <hr className="my-1 border-t-4" />
+            <hr className="mt-1 mb-2 border-t-4" />
           </motion.div>
           
           <motion.a 

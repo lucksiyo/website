@@ -80,7 +80,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-4 font-[600]">
           <a 
             href='/projects' 
-            className="hover:text-(--accent)"
+            className="hover:text-(--accent) hover:font-[800]"
             onMouseEnter={() => hoverSound()}
             onMouseDown={() => activeSound()}  
           >
@@ -88,7 +88,7 @@ const Navbar = () => {
           </a>
           <a 
             href='/about' 
-            className="hover:text-(--accent)"
+            className="hover:text-(--accent) hover:font-[800]"
             onMouseEnter={() => hoverSound()}
             onMouseDown={() => activeSound()}
           >
@@ -129,7 +129,7 @@ const Navbar = () => {
             <div className="px-8 flex flex-col items-end gap-2">
               <a 
                 href='/projects'
-                className="hover:text-(--accent)"
+                className="hover:text-(--accent) hover:font-[800]"
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
@@ -137,7 +137,7 @@ const Navbar = () => {
               </a>
               <a
                 href='/about'
-                className="hover:text-(--accent)"
+                className="hover:text-(--accent) hover:font-[800]"
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >

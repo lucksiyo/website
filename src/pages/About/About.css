@@ -4,18 +4,17 @@
 
 .social-link {
   padding: 0.25rem 1rem;
+  color: var(--light);
+  background: var(--dark);
   display: flex;
   align-items: center;
   gap: 1rem;
-  border: 1px solid var(--dark);
   transition: box-shadow 0.2s linear;
 }
 
 .social-link:hover {
-  color: var(--light);
-  background: var(--primary);
-  border: 1px solid var(--primary);
-  box-shadow: 4px 4px 0 var(--dark);
+  background: var(--accent);
+  box-shadow: 4px 4px 0 var(--primary);
 }
 
 .site-button {

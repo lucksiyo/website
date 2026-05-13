@@ -28,7 +28,7 @@ const Projects = () => {
           />
           <div>
             <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">Tempo</h3>
-            <hr className="my-1 border-t-4" />
+            <hr className="mt-1 mb-2 border-t-4" />
             <p className='text-[0.875rem] italic'>
               2025
             </p>
@@ -50,7 +50,7 @@ const Projects = () => {
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
-                <FaCode />
+                <FaCode size={'1.125rem'} />
                 Source Code
               </a>
             </div>
@@ -63,7 +63,7 @@ const Projects = () => {
         <div className="md:px-8 xl:px-16 flex flex-col-reverse md:grid md:grid-cols-2 gap-4 md:gap-8 items-center">
           <div>
             <h3 className="font-['Rubik'] font-[500] text-[1.25rem] uppercase">The Spacelab Nonprofit</h3>
-            <hr className="my-1 border-t-4" />
+            <hr className="mt-1 mb-2 border-t-4" />
             <p className='text-[0.875rem] italic'>
               2024-2025
             </p>
@@ -84,7 +84,7 @@ const Projects = () => {
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
-                <FiGlobe />
+                <FiGlobe size={'1.125rem'} />
                 View Project
               </a>
               <a 
@@ -95,7 +95,7 @@ const Projects = () => {
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
-                <FaCode />
+                <FaCode size={'1.125rem'} />
                 Source Code
               </a>
             </div>
