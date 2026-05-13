@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 import { easeOut, motion } from 'motion/react'
 import useSound from 'use-sound'
-import { MdOutlineArrowForward } from "react-icons/md"
-import { MdOutlineClose } from "react-icons/md"
 import { MdAccessTimeFilled } from "react-icons/md"
 import { MdLocationOn } from "react-icons/md"
 import hoverSFX from '../../assets/sounds/sfx_hover.wav'
@@ -76,41 +74,38 @@ const Home = () => {
         </div>
 
         <div className='pl-0 lg:pl-40 xl:pl-56 2xl:pl-64 w-full flex flex-col gap-1'>
-          <motion.a 
-            className='subpage-link'
-            href='/projects'
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.3, ease: easeOut }}
-            onMouseEnter={() => hoverSound()}
-            onMouseDown={() => activeSound()}
           >
-            <p>Projects</p>
-            <MdOutlineArrowForward />
-          </motion.a>
+            <h2 className="font-['Rubik'] font-[500] text-[1.5rem] uppercase">Menu</h2>
+            <hr className="my-1 border-t-4" />
+          </motion.div>
+          
           <motion.a 
             className='subpage-link'
-            href='/about'
+            href='/projects'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.3, ease: easeOut }}
             onMouseEnter={() => hoverSound()}
             onMouseDown={() => activeSound()}
           >
-            About
-            <MdOutlineArrowForward />
+            <p>Projects</p>
+            <p>1.</p>
           </motion.a>
           <motion.a 
             className='subpage-link'
-            href='/'
+            href='/about'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.3, ease: easeOut }}
             onMouseEnter={() => hoverSound()}
             onMouseDown={() => activeSound()}
           >
-            <p>More coming soon.</p>
-            <MdOutlineClose />
+            <p>About</p>
+            <p>2.</p>
           </motion.a>
         </div>
 
