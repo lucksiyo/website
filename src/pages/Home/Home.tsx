@@ -18,14 +18,14 @@ const Home = () => {
   const [splashText] = useState(randomText)
 
   // get current date/time
-    const [currentDate, setCurrentDate] = useState(new Date())
-    useEffect(() => {
-      const timer = setInterval(() => {
-        setCurrentDate(new Date())
-      }, 1000)
-  
-      return () => clearInterval(timer)
-    }, [])
+  const [currentDate, setCurrentDate] = useState(new Date())
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentDate(new Date())
+    }, 1000)
+
+    return () => clearInterval(timer)
+  }, [])
 
   return (
     <motion.div

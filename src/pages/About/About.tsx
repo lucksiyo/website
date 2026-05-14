@@ -1,5 +1,5 @@
 import useSound from 'use-sound'
-import { FaGithub, FaItchIo, FaInstagram, FaTwitch, FaYoutube, FaCat } from "react-icons/fa"
+import { FaGithub, FaItchIo, FaInstagram, FaTwitch, FaYoutube } from "react-icons/fa"
 import { FaBluesky } from "react-icons/fa6";
 import Navbar from "../../components/Navbar/Navbar"
 import Footer from "../../components/Footer/Footer"
@@ -122,18 +122,6 @@ const About = () => {
               >
                   <FaYoutube size={'1.125rem'} />
                   <p>YouTube</p>
-              </a>
-
-              <a 
-                className="social-link"
-                href="https://nekoweb.org/follow/lucksiyo.xyz"
-                target='_blank'
-                rel='noopenner noreferrer'
-                onMouseEnter={() => hoverSound()}
-                onMouseDown={() => activeSound()}
-              >
-                  <FaCat size={'1.125rem'} />
-                  <p>Follow on Nekoweb</p>
               </a>
             </div>
           </div>         

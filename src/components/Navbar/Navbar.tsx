@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { AnimatePresence, easeInOut, motion, useMotionValueEvent, useScroll } from "motion/react"
 import useSound from 'use-sound'
-import { MdAccessTimeFilled, MdClose, MdLocationOn, MdMenu } from "react-icons/md"
+import { MdClose, MdMenu } from "react-icons/md"
 import hoverSFX from '../../assets/sounds/sfx_hover.wav'
 import activeSFX from '../../assets/sounds/sfx_active.wav'
-
 import './Navbar.css'
 
 const Navbar = () => {
@@ -22,16 +21,6 @@ const Navbar = () => {
       setHidden(false)
     }
   })
-
-  // get current date/time
-  const [currentDate, setCurrentDate] = useState(new Date())
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentDate(new Date())
-    }, 1000)
-
-    return () => clearInterval(timer)
-  }, [])
   
   const [showMobileNav, setShowMobileNav] = useState(false)
 
@@ -52,35 +41,12 @@ const Navbar = () => {
           >
             lucksiyo!
           </a>
-          <div className='hidden lg:flex items-center font-[600] text-sm text-(--accent)'>
-            <p>[&nbsp;</p>
-            <MdLocationOn />
-            <p>&nbsp;Southern California, USA ]</p>
-          </div>
-          <div className='hidden lg:flex items-center font-[600] text-sm text-(--accent) uppercase'>
-            <p>[&nbsp;</p>
-            <MdAccessTimeFilled />
-            <p>&nbsp;</p>
-            {currentDate.toLocaleDateString('en-US', {
-              timeZone: 'America/Los_Angeles',
-              weekday: 'short'
-            })}
-            <p>&nbsp;</p>
-            {currentDate.toLocaleTimeString('en-US', {
-              timeZone: 'America/Los_Angeles', 
-              hour: '2-digit', 
-              minute: '2-digit',
-              second: '2-digit',
-              hour12: true             
-            })}
-            <p>&nbsp;]</p>
-          </div>
         </div>
 
         <div className="hidden md:flex items-center gap-4 font-[600]">
           <a 
             href='/projects' 
-            className="hover:text-(--accent) hover:font-[800]"
+            className="hover:text-(--accent) hover:font-[700]"
             onMouseEnter={() => hoverSound()}
             onMouseDown={() => activeSound()}  
           >
@@ -88,7 +54,7 @@ const Navbar = () => {
           </a>
           <a 
             href='/about' 
-            className="hover:text-(--accent) hover:font-[800]"
+            className="hover:text-(--accent) hover:font-[700]"
             onMouseEnter={() => hoverSound()}
             onMouseDown={() => activeSound()}
           >
@@ -129,7 +95,7 @@ const Navbar = () => {
             <div className="px-8 flex flex-col items-end gap-2">
               <a 
                 href='/projects'
-                className="hover:text-(--accent) hover:font-[800]"
+                className="hover:text-(--accent) hover:font-[700]"
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
@@ -137,7 +103,7 @@ const Navbar = () => {
               </a>
               <a
                 href='/about'
-                className="hover:text-(--accent) hover:font-[800]"
+                className="hover:text-(--accent) hover:font-[700]"
                 onMouseEnter={() => hoverSound()}
                 onMouseDown={() => activeSound()}
               >
