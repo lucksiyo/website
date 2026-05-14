@@ -12,11 +12,13 @@ import iLikeComputer from '../../../assets/images/buttons/i-like-computer.png'
 import internetArchive from '../../../assets/images/buttons/internet-archive.gif'
 import madeWithMac from '../../../assets/images/buttons/made-with-mac.gif'
 import minecraft from '../../../assets/images/buttons/minecraft.gif'
+import nekoweb from '../../../assets/images/buttons/nekoweb.webp'
 import pictochat from '../../../assets/images/buttons/pictochat.gif'
 import pokemon from '../../../assets/images/buttons/pokemon.gif'
 import responsiveWebsite from '../../../assets/images/buttons/responsive-website.png'
 import stardewValley from '../../../assets/images/buttons/stardew-valley.gif'
 import testedOnFirefox from '../../../assets/images/buttons/tested-on-firefox.gif'
+import largest8831Collection from '../../../assets/images/buttons/the-largest-88x31-collection.png'
 import viewWithCat from '../../../assets/images/buttons/view-with-cat.png'
 import vscodium from '../../../assets/images/buttons/vscodium.gif'
 import yourAdHere from '../../../assets/images/buttons/your-ad-here.gif'
@@ -37,7 +39,7 @@ const Buttons = () => {
         onMouseEnter={() => hoverSound()}
         onMouseDown={() => activeSound()}
       >
-        <img alt="Nekoweb.org | Indie website hosting service" src="https://nekoweb.org/assets/buttons/button5.gif" />
+        <img alt="Nekoweb.org | Indie website hosting service" src={nekoweb} />
       </a>
       <a 
         className='button-88x31' 
@@ -47,7 +49,7 @@ const Buttons = () => {
         onMouseEnter={() => hoverSound()}
         onMouseDown={() => activeSound()}
       >
-        <img alt="Largest 88x31 Collection | A collection of 88x31 buttons" src="https://capstasher.neocities.org/the-largest-88x31-collection-2.png"/>
+        <img alt="Largest 88x31 Collection | A collection of 88x31 buttons" src={largest8831Collection}/>
       </a>
       <img className='button-88x31' alt="Your ad here 88x31 button" src={yourAdHere} onMouseEnter={() => hoverSound()} />
       <img className='button-88x31' alt="I like computer" src={iLikeComputer} onMouseEnter={() => hoverSound()} />

@@ -48,8 +48,8 @@ const About = () => {
           <div className="md:px-8 xl:px-16 flex flex-col gap-8">
             <p className='text-center'>
               Hey, I'm <span className="font-[600] text-(--primary)">lucksiyo!</span> and
-              I'm a creative software dev. My interests include open source, computer
-              networks, cinematography, and tabletop/video games.
+              I'm (currently) an indie software dev. My interests include web/app dev,
+              tabletop/video games, cinematography, and rap/rnb music.
             </p>
             <div className='flex flex-wrap justify-center gap-4'>
               <a 
